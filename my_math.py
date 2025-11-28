@@ -41,3 +41,20 @@ def mean(values):
         raise ValueError("mean() of empty data")
 
     return total / count
+
+#Author: [Your Name], QCC ID: [Your ID]
+#ET574 Homework 5: Math Library
+
+def isPrime(x):
+    if x <= 1:
+        return False
+    if x == 2:
+        return True
+    if x % 2 == 0:
+        return False
+    i = 3
+    while i * i <= x:
+        if x % i == 0:
+            return False
+        i += 2
+    return True
