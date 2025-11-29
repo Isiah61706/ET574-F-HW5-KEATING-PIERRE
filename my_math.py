@@ -48,28 +48,18 @@
 def isPrime(x):
     if x <= 1:
         return False
-    if x == 2:
-        return True
-    if x % 2 == 0:
-        return False
-    i = 3
-    while i * i <= x:
+    for i in range(2, int(x**0.5) + 1):
         if x % i == 0:
             return False
-        i += 2
+
     return True
 
 def isEven(x):
     return x % 2 ==0
 
-def fibonacci(n):
-    if n < 0:
-        raise ValueError("Fibonacci not defined for negative numbers")
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    a, b = 0, 1
-    for _ in range(2, n + 1):
-        a, b = b, a + b
-    return b
+def area_of_circle(r):
+    if r < 0:
+        raise ValueError("Radius cannot be negative.")
+
+    pi = 3.14159
+    return pi * r * r

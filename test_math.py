@@ -77,7 +77,7 @@ assert fibonacci(1) == 1
 assert fibonacci(6) == 8
 assert fibonacci(10) == 55
 try:
-    fibonacci(-3)  # should raise ValueError
+    fibonacci(-3)
 except ValueError:
     pass
 else:
