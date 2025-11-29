@@ -59,7 +59,7 @@
 #     unittest.main(verbosity=2)
 
 
-from my_math import isPrime, isEven
+from my_math import isPrime, isEven, fibonacci
 
 assert isPrime(2) == True
 assert isPrime(15) == False
@@ -71,5 +71,10 @@ assert isEven(3) == False
 assert isEven(0) == True
 assert isEven(-4) == True
 assert isEven(-5) == False
+
+assert fibonacci(0) == 0
+assert fibonacci(1) == 1
+assert fibonacci(6) == 8
+assert fibonacci(10) == 55
 
 print("✅ All tests passed successfully!")
