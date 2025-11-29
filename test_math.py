@@ -1,3 +1,5 @@
+#Author: [Isiah Keating-Pierre], QCC ID: [24603122]
+
 # import unittest
 # from my_math import fibonacci, mean
 

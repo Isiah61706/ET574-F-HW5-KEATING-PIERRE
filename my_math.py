@@ -1,4 +1,6 @@
-# # my_math.py
+#Author: [Isiah Keating-Pierre], QCC ID: [24603122]
+
+# my_math.py
 
 # def fibonacci(n):
 #     """
@@ -42,8 +44,6 @@
 
 #     return total / count
 
-#Author: [Your Name], QCC ID: [Your ID]
-#ET574 Homework 5: Math Library
 
 def isPrime(x):
     if x <= 1:
