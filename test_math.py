@@ -59,9 +59,17 @@
 #     unittest.main(verbosity=2)
 
 
-from my_math import isPrime
+from my_math import isPrime, isEven
 
 assert isPrime(2) == True
 assert isPrime(15) == False
 assert isPrime(17) == True
 assert isPrime(1) == False
+
+assert isEven(2) == True
+assert isEven(3) == False
+assert isEven(0) == True
+assert isEven(-4) == True
+assert isEven(-5) == False
+
+print("✅ All tests passed successfully!")
