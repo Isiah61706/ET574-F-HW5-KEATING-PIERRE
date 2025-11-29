@@ -74,4 +74,4 @@ assert round(area_of_circle(3), 5) == round(3.14159 * 9, 5)
 assert sum_of_digits(1234) == 10
 assert sum_of_digits(-505) == 10
 
-print("✅ All tests passed successfully!")
+print("All tests Ran successfully!")
