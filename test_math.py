@@ -59,18 +59,15 @@
 #     unittest.main(verbosity=2)
 
 
-from my_math import isPrime, isEven, fibonacci
+from my_math import isPrime, sum_of_digits, area_of_circle
 
 assert isPrime(2) == True
 assert isPrime(15) == False
 assert isPrime(17) == True
 assert isPrime(1) == False
 
-assert isEven(2) == True
-assert isEven(3) == False
-assert isEven(0) == True
-assert isEven(-4) == True
-assert isEven(-5) == False
+assert round(area_of_circle(1), 5) == 3.14159
+assert round(area_of_circle(3), 5) == round(3.14159 * 9, 5)
 
 assert fibonacci(0) == 0
 assert fibonacci(1) == 1
