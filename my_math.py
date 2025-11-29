@@ -63,3 +63,13 @@ def area_of_circle(r):
 
     pi = 3.14159
     return pi * r * r
+
+def sum_of_digits(n):
+    n = abs(n)
+    total = 0
+
+    while n > 0:
+        total += n % 10
+        n //= 10
+
+    return total
