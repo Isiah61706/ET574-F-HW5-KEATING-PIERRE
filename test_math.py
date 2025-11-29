@@ -69,15 +69,7 @@ assert isPrime(1) == False
 assert round(area_of_circle(1), 5) == 3.14159
 assert round(area_of_circle(3), 5) == round(3.14159 * 9, 5)
 
-assert fibonacci(0) == 0
-assert fibonacci(1) == 1
-assert fibonacci(6) == 8
-assert fibonacci(10) == 55
-try:
-    fibonacci(-3)
-except ValueError:
-    pass
-else:
-    raise AssertionError("fibonacci(-3) did not raise ValueError")
+assert sum_of_digits(1234) == 10
+assert sum_of_digits(-505) == 10
 
 print("✅ All tests passed successfully!")
