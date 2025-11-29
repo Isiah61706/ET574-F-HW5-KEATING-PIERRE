@@ -76,5 +76,11 @@ assert fibonacci(0) == 0
 assert fibonacci(1) == 1
 assert fibonacci(6) == 8
 assert fibonacci(10) == 55
+try:
+    fibonacci(-3)  # should raise ValueError
+except ValueError:
+    pass
+else:
+    raise AssertionError("fibonacci(-3) did not raise ValueError")
 
 print("✅ All tests passed successfully!")
